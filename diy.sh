@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 # Modify default IP
-sed -i 's/192.168.1.1/10.0.0.254/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/172.20.126.3/g' package/base-files/files/bin/config_generate
 
 # Diasble dhcp for lan
 sed -i '29a\\toption\ ignore\ 1' package/network/services/dnsmasq/files/dhcp.conf
